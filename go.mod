@@ -1,4 +1,4 @@
-module idis
+module github.com/yimiliya/idis
 
 go 1.25.5
 
