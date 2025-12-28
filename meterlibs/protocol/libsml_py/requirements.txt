@@ -1,0 +1,3 @@
+# libSML Python implementation requirements
+# All dependencies are in Python standard library
+

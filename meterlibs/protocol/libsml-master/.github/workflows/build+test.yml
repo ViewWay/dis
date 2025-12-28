@@ -1,0 +1,12 @@
+name: build+test
+on: [push, pull_request]
+jobs:
+  build_and_test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install deps
+      run: sudo apt-get install uuid-dev
+    - uses: actions/checkout@v2
+    - run: make -C sml
+    - run: make -C examples
+    - run: make -C test

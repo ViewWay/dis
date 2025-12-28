@@ -1,0 +1,56 @@
+linters:
+  enable:
+    - asciicheck
+    - bodyclose
+    - dogsled
+    - durationcheck
+    - errorlint
+    - forbidigo
+    - gochecknoglobals
+    - gochecknoinits
+    - gocritic
+    - godox
+    - gofmt
+    - gofumpt
+    - goheader
+    - goimports
+    - gomodguard
+    - goprintffuncname
+    - gosec
+    - makezero
+    - misspell
+    - nestif
+    - noctx
+    - nolintlint
+    - prealloc
+    - predeclared
+    - revive
+    - stylecheck
+    - thelper
+    - tparallel
+    - unconvert
+    - unparam
+    - whitespace
+  disable:
+    - depguard
+    - gci
+    - testpackage
+    - paralleltest
+    - nlreturn
+    - cyclop
+    - wsl
+    - lll
+    - godot
+    - nakedret
+    - gocyclo
+    - funlen
+    - goconst
+    - gocognit
+    - errcheck
+    - dupl
+    - exhaustive
+
+linters-settings:
+  gosec:
+    excludes:
+      - G115 # Potential integer overflow when converting between integer types
